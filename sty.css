@@ -1,0 +1,47 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:black;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+
+#one{
+	color:red;
+	font-family:Amazone BT;
+	font-style:italic;
+	background-color:orange;
+}
+#two{
+	border:5px solid red;
+	border-radius:5px ;
+}
+.text-block {
+			
+			position:absolute;
+		    bottom:300px;
+		    right:50px;
+			color:yellow;
+			padding-left:10px;
+			font-size:9px;
+			}
+.tb1 {
+			
+			position:absolute;
+		    bottom:200px;
+		    right:50px;
+			background-color:lightgreen;
+			color:#900C3F;
+			padding-left:10px;
+			font-size:9px;
+			font-family:Amazone BT;
+			font-style:italic;
+			}
+#three{
+	font-family:Amazone BT;
+	font-style:italic;
+	font-size:50px;
+	
+}

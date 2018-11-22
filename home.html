@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+    	
+	    <script src="lib/js/jquery.js"></script>
+    	<script src="lib/js/bootstrap.js"></script>
+    	<script src="dist/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="dist/css/bootstrap.css">
+        <link rel ="stylesheet" href="dist/fa/fa/css/all.css"/>
+		<script src="lib/js/angular.js"></script>
+    	<script src="lib/js/route.js"></script>
+        <link rel="stylesheet" href="home.css">
+		
+		<script>
+			var obj=angular.module("pageroute",["ngRoute"]);
+			obj.config(function($routeProvider)
+			{
+				$routeProvider
+				.when("/education",{
+					templateUrl:"education.html"
+				})
+				.when("/project",{
+					templateUrl:"project.html"
+				})
+				
+				.when("/contact",{
+					templateUrl:"contact.html"
+				})
+				
+				.when("/hobby",{
+					templateUrl:"hobby.html"
+				})
+				.when("/personal",{
+					templateUrl:"personal.html"
+				});
+			});
+		</script>
+	
+	</head>
+		<body ng-app="pageroute">
+			<div class="container-fluid">
+				<div class="row jumbotron" id="one">
+					<div class="col-sm-3">
+					<p>I AM ....<br>
+					<q><span style="color:blue">PALLAVI KHEDLE</q></span></p>
+						<img src="pictureportfolio/pallu.jpg" class="img-responsive img-circle"
+						height="300" width="350">
+					</div>
+				
+					<div class="col-sm-5">
+						<p id="two"><q><span style="color:red">##</span>Life Is Not About Finding Yourself......
+						<br>   ....Life Is About Creating Yourself.</q>
+						</p>
+					</div>
+					<br><br>
+					<div class="col-sm-4 text-center">
+					<p id="three">Who Am I??</p>
+						<img src="pictureportfolio/images.jpg" class="img-responsive img-thumbnail" 
+						height="350" width="250">
+						<br>
+						<p style="color:navy">I Am Very Passionate About Learning New Things And Technology. </p>
+					</div>
+				</div><!--row end-->
+				</div><!--container-fluid end-->
+				<div class="container-fluid">
+				<div class="row" style="border:2px solid red">
+				<br>
+					
+				<div class="col-sm-6">
+					<div class="menu">
+					<ul>
+						<li><a href="#education" style="background-color:lightgreen;color:red;" class="fa fa-umbrella">
+						Education & Skills</a></li>
+						<li><a href="#project" style="background-color:#33ADFF;color:red;"
+						class="fa fa-desktop">Project</a></li>
+						<li><a href="#contact" style="background-color:#4733FF" 
+						class="fa fa-phone-volume">Contact</a></li>
+						<li><a href="#hobby" style="background-color:green;color:red;"
+						class="fa fa-table-tennis">Hobbies</a></li>
+						<li ><a href="#personal" style="background-color:#FF335B" 
+						class="fa fa-user-secret">Personal Details</a></li>
+					</ul>
+					<br>
+					</div>
+					</div>
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5">
+						<img src="pictureportfolio/about1.jpg" alt="pic" height="150" width="250" 
+						class="img-responsive img-thumbnail">
+					</div>
+					
+				</div><!--row end-->
+				<br><br>
+				
+				
+				
+				<ng-view>
+				
+				
+				
+				</ng-view>
+			</div><!--container-fluid end-->
+		</body>
+</html>

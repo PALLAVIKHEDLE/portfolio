@@ -1,0 +1,32 @@
+#one{
+	background-color:#F08080;
+	color:#900C3F;
+	font-size:30px;
+	font-style:italic;
+	font-family:Comic Sans MS ;
+}
+body{
+	margin:0px;
+	padding:0px;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+#two{
+	font-family:impact;
+	font-weight:bold;
+	font-size:35px;
+	font-style:italic;
+	background-color:orange;
+}
+#three{
+	font-family:Arial;
+	font-size:30px;
+	font-style:oblique;
+	color:#00FFFF;
+}
+.menu{float:left;width: 100%;}
+.menu li{list-style-type: none;}
+.menu li a{color: white;text-decoration: none;padding: 10px;display:block;width:100%;}
+.menu li a:hover{font-size: 25px;}
